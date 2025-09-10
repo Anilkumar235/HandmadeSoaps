@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Free Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Free Store</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Free Store</h1>
+        <p>Get the best products at amazing prices!</p>
+        <a href="#shop" class="btn">Shop Now</a>
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Wireless Earbuds</h3>
+                <p>High-quality sound, long battery life.</p>
+                <p class="price">₹1,499</p>
+                <button onclick="addToCart('Wireless Earbuds', 1499)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Smart Watch</h3>
+                <p>Track fitness, calls, and notifications.</p>
+                <p class="price">₹2,999</p>
+                <button onclick="addToCart('Smart Watch', 2999)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Bluetooth Speaker</h3>
+                <p>Portable, waterproof, rich sound.</p>
+                <p class="price">₹1,199</p>
+                <button onclick="addToCart('Bluetooth Speaker', 1199)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/product4.jpg" alt="Product 4">
+                <h3>Wireless Charger</h3>
+                <p>Fast charging, sleek design.</p>
+                <p class="price">₹799</p>
+                <button onclick="addToCart('Wireless Charger', 799)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Free Store | Follow us on social media!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
